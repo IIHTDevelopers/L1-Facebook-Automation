@@ -44,7 +44,7 @@ public class Facebook_L1_AutomationTest extends AppTestBase {
 		startupPage = new StartupPage(driver);
 		FaceBookPageInstance = new FaceBookPage(driver);
 		yakshaAssert(currentTest(), isValidUrl, businessTestFile);
-		Assert.assertTrue(isValidUrl, configData.get("url")+" might be Server down at this moment. Please try after sometime.");
+		Assert.assertTrue(isValidUrl);
 		}catch(Exception ex){
 			yakshaAssert(currentTest(), false, businessTestFile);
 			Assert.assertTrue(false);
